@@ -1,0 +1,71 @@
+!SESSION 2014-01-13 22:01:25.321 -----------------------------------------------
+eclipse.buildId=3.4.2.201308081805
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.js.core 4 0 2014-01-13 22:06:43.733
+!MESSAGE (Build 3.4.2.201308081805) [ERROR]  NPM is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: NPM is not installed.
+	at com.aptana.js.internal.core.node.NodePackageManager.getConfigValue(NodePackageManager.java:494)
+	at com.aptana.js.internal.core.node.NodePackageManager.getConfigPrefixPath(NodePackageManager.java:672)
+	at com.aptana.js.internal.core.node.NodePackageManager.getModulesPath(NodePackageManager.java:648)
+	at com.aptana.js.internal.core.inferencing.NodeModuleResolver.getModulesPath(NodeModuleResolver.java:262)
+	at com.aptana.js.internal.core.inferencing.NodeModuleResolver.globalFolders(NodeModuleResolver.java:247)
+	at com.aptana.js.internal.core.inferencing.NodeModuleResolver.nodeModulesPaths(NodeModuleResolver.java:216)
+	at com.aptana.js.internal.core.inferencing.NodeModuleResolver.loadNodeModules(NodeModuleResolver.java:173)
+	at com.aptana.js.internal.core.inferencing.NodeModuleResolver.resolve(NodeModuleResolver.java:93)
+	at com.aptana.js.core.inferencing.RequireResolverFactory.resolve(RequireResolverFactory.java:152)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.resolve(JSNodeTypeInferrer.java:782)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:725)
+	at com.aptana.js.core.parsing.ast.JSInvokeNode.accept(JSInvokeNode.java:31)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:266)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:247)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:555)
+	at com.aptana.js.core.parsing.ast.JSGetPropertyNode.accept(JSGetPropertyNode.java:34)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:266)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:247)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:735)
+	at com.aptana.js.core.parsing.ast.JSInvokeNode.accept(JSInvokeNode.java:31)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.addTypes(JSNodeTypeInferrer.java:173)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:408)
+	at com.aptana.js.core.parsing.ast.JSConditionalNode.accept(JSConditionalNode.java:39)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:559)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:347)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:384)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:290)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:408)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:442)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:286)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:220)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:114)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.core.build.UnifiedBuilder.buildFile(UnifiedBuilder.java:603)
+	at com.aptana.core.build.UnifiedBuilder.doBuildFiles(UnifiedBuilder.java:514)
+	at com.aptana.core.build.UnifiedBuilder.buildFiles(UnifiedBuilder.java:486)
+	at com.aptana.core.build.UnifiedBuilder.incrementalBuild(UnifiedBuilder.java:252)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.aptana.js.core 4 0 2014-01-13 22:06:43.740
+!MESSAGE NPM is not installed.
+
+!ENTRY com.aptana.ruby.core 4 0 2014-01-13 22:12:06.579
+!MESSAGE Cannot run program "ruby": CreateProcess error=2, The system cannot find the file specified
