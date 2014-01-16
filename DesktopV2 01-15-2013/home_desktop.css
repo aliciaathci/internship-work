@@ -1,0 +1,38 @@
+/*------------------------------------------------*/
+/*---------[Styles used by home.html]-------------*/
+/*------------------------------------------------*/
+
+#column1{
+	width: 275px;
+	font-size: small;
+	padding: 0px 0px 0px 50px;
+}
+
+#column2{
+	width: 275px;
+	font-size: small;
+	position: relative;
+	top: -480px;
+	padding: 0px 0px 0px 400px;
+}
+
+#column3{
+	width: 275px;
+	font-size: small;
+	position: relative;
+	top: -1000px;
+	padding: 0px 0px 0px 750px;
+}
+
+#column2 img, #column3 img{
+	max-width: 125px;
+	max-height: 125px;
+	width:auto;
+	height:auto;
+	padding: 0px 0px 0px 50px;
+}
+
+.contentContainer{
+	max-height: 600px;
+	max-width: 1050px;
+}

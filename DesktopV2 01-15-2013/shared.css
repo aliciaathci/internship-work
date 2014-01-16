@@ -1,0 +1,86 @@
+/*------------------------------------------------*/
+/*---------[Styles shared across all pages]-------*/
+/*------------------------------------------------*/
+
+body { 
+	margin:0px; 
+}
+
+.titleBar{
+	position: relative;
+	min-width: 820px;
+	width: 100%;
+	height: 100px;
+	background: url("titleBar_bg.png") repeat-x scroll 0% 0% transparent; /*code borrowed from www.pandora.com*/
+	border-bottom: 2px solid black;
+}
+
+.main_title{
+	top: -120px;
+	left: 300px;
+	width: 610px;
+	position: relative;
+	color: #FFFF01;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.logo img{
+	max-width: 100px;
+	max-height: 100px;
+	width:auto;
+	height:auto;
+	padding: 0px 0px 0px 5px;
+}
+
+.arrow{
+	top: -160px;
+	left: 120px;
+	position: relative;
+	width: 610px;
+}
+
+.navigation a{
+	color: #FFFF01;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation{
+	position: relative;
+	top: -180px;
+	left: 350px;
+	width: 350px;
+	color: #FFFF01;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+	color: #3915af;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+	color: #886fd7;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+strong, a{
+	color: #992768;
+}
+
+p, li{
+	font-family:"Times New Roman", Times, serif;
+}
+
+.footer{
+	background-color: #3915AF;
+	min-width: 820px;
+	height: 50px;
+}
+
+.footer p, .footer a{
+	padding: 15px 0px 0px 0px;
+	color: #FFFF01;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align: center;
+}

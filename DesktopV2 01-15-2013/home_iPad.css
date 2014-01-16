@@ -1,0 +1,47 @@
+/*------------------------------------------------*/
+/*---[Styles used on iPad version of home page]---*/
+/*------------------------------------------------*/
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+	
+	.titleBar{
+		min-width: 768px;
+	}
+
+	.main_title{
+		top: -75px;
+		left: 200px;
+		width: 500px;
+	}
+
+	.arrow{
+		top: -170px;
+		left: 145px;
+		width: 600px;
+	}
+	
+	.arrow img{ /*make arrow in titleBar smaller on mobile devices*/
+		width: 594px;
+		height: 35px;
+	}
+	
+	.navigation{ /*hide navigation menu on mobile devices*/
+		display: none;
+	}
+	
+	.contentContainer{
+		max-height: 1500px;
+		max-width: 768px;
+	}
+	
+	#column1, #column2, #column3{
+		width: 700px;
+		top: 0px;
+		padding: 0px 0px 0px 25px;
+		font-size: medium;
+	}
+	
+	.footer{ /*hide footer on mobile devices*/
+		display: none;
+	}
+}

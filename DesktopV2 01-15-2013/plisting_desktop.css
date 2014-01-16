@@ -1,0 +1,12 @@
+/*------------------------------------------------*/
+/*-----[Styles used by project_listing.html]------*/
+/*------------------------------------------------*/
+
+.contentContainer{
+	max-height: 600px;
+	max-width: 1050px;
+}
+
+#SenchaMenus{
+	left: 450px;
+}
