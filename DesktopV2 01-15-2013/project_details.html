@@ -4,9 +4,10 @@
 	<title>Howard Consulting &#38; Investments Home Page</title>
 	<meta name="description" content="Howard Consulting &#38; Investments is a Statesboro business that creates innovative, personalized projects and offers internship opportunities to students."/>
 	<link rel="stylesheet" type="text/css" href="shared.css" />
+	<link rel="stylesheet" type="text/css" href="plisting_desktop.css" />
+
 	
 	<!--The following stylesheets don't exist yet and are placeholders.
-	<link rel="stylesheet" type="text/css" href="pdetails_desktop.css" />
 	<link rel="stylesheet" media="screen and (max-width: 320px)" href="pdetails_mobile.css"/>
 	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="pdetails_tablet.css"/>
 	<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="pdetails_iPad.css"/>-->
@@ -45,6 +46,78 @@
 	</div>
 	<!--Title bar and naviation code ends here-->
 	
+	
+	<div class="contentContainer">
+		<h2>Project Details</h2>
+		
+		<!-- Explicitly create a Container-->
+		<script type="text/javascript">
+			Ext.create('Ext.container.Container', {
+			    layout: {
+			        type: 'border'
+			    },
+			    width: 800,
+			    height: 375,
+			    renderTo: Ext.getBody(),
+			    border: 1,
+			    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'1px'},
+			    /*defaults: {
+			        labelWidth: 80,
+			        // implicitly create Container by specifying xtype
+			        xtype: 'datefield',
+			        flex: 1,
+			        style: {
+			            padding: '10px'
+			        }
+			    },*/
+			    items: [{
+			        name: 'projectDescription',
+			        region: 'center',
+			        //nested border layout for projectDescription starts here
+			        items: [{
+			        	name: 'projectTitle',
+			        	html: '<h3>Project Title</h3>',
+			        	region: 'north'
+			        },{
+			        	name: 'projectDescContent',
+			        	html: 'The detailed description goes here.',
+			        	height: 250,
+			        	region: 'center'
+			        },{
+			        	name: 'buttons',
+			        	region: 'south',
+			        	items: [{
+			        		xtype: 'button',
+			        		scale: 'medium',
+			        		text: 'Back to Project Listing',
+			        		listeners : {
+			       				click : function(){
+			       					document.location = 'project_listing.html';
+			       				}
+		       			} 
+			        	},{
+			        		xtype: 'button',
+			        		scale: 'medium',
+			        		text: 'Visit Project ABC\'s Website',
+			        		listeners : {
+		       					click : function(){
+		       						location.href = 'http://www.google.com';
+		       				}
+		       			} 
+			        	}]
+			        }]
+			        //nested border layout for projectDescription ends here
+			    },{
+			    	//xtype: 'image',
+			    	name: 'images',
+			    	html: 'Images go here',
+			    	region: 'west',
+			    	width: 275,
+			    	//src: fillerPic.png
+			    }]
+			});
+		</script>
+	</div>
 	
 	
 	<div class="footer">
