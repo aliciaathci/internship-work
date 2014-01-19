@@ -1,0 +1,23 @@
+/*------------------------------------------------*/
+/*------[Styles used by event_listing.html]-------*/
+/*------------------------------------------------*/
+
+.contentContainer{
+	max-height: 600px;
+	max-width: 1050px;
+}
+
+#EventMenu{
+	/*
+	 * ----Center the div----
+	 *
+	 * 
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;*/
+}
+
+#slideshow{
+	max-height: 250px;
+	width: auto;
+}

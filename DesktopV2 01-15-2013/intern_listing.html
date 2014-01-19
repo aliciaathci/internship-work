@@ -48,7 +48,7 @@
 	
 	<!--main page content begins here-->
 	<div class="contentContainer">
-		<h2>Project Listing</h2>
+		<h2>Intern Listing</h2>
 			
 		<div> <!--start text box-->
 			<p>
@@ -70,74 +70,40 @@
 		</div> <!--end text box-->
 	</div>
 
-	<div id="SenchaMenus"> <!--start Sencha project menus-->
-		<h3>Local Projects</h3> 
+	<div id="InternMenu"> <!--start Sencha intern menu-->
+		<h3>Interns</h3> 
 		
 		<script type="text/javascript">
 			Ext.create('Ext.menu.Menu', {
 		    	width: 300,
 		    	plain: true,
 		    	floating: false,  // usually you want this set to True (default)
-		    	renderTo: SenchaMenus,
+		    	renderTo: InternMenu,
 		    	items: [{
-		       		text: 'Free Spirit Pottery Website',
+		       		text: 'Alicia Wood',
 		       			listeners : {
 		       				click : function(){
-		       					document.location = 'project_details.html';
+		       					document.location = 'intern_details.html';
 		       				}
 		       			} 
 		    		},{
-		        	text: 'Local Placeholder 1',
+		        	text: 'Suzy Q',
 		       			listeners : {
 		       				click : function(){
-		       					document.location = 'project_details.html'; //this is a generic example and does not use a loop because the link is a placeholder
+		       					document.location = 'intern_details.html'; //this is a generic example and does not use a loop because the link is a placeholder
 		       				}
 		       			} 
 				    },{
-			        text: 'Local Placeholder 2',
+			        text: 'John Doe',
 		       			listeners : {
 		       				click : function(){
-		       					document.location = 'project_details.html';
+		       					document.location = 'intern_details.html';
 		       				}
 		       			} 
 			    }]
 			});
-		</script>
-		
-		
-		<h3>Intern Projects</h3>
-		
-		<script type="text/javascript">
-			Ext.create('Ext.menu.Menu', {
-		    	width: 300,
-		    	plain: true,
-		    	floating: false,  // usually you want this set to True (default)
-		    	renderTo: SenchaMenus,
-		    	items: [{
-		       		text: 'Alicia Wood: HCI Sencha Ext JS Website',
-		       			listeners : {
-		       				click : function(){
-		       					document.location = 'project_details.html';
-		       				}
-		       			} 
-		    		},{
-		        	text: 'Intern Placeholder 1',
-		       			listeners : {
-		       				click : function(){
-		       					document.location = 'project_details.html';
-		       				}
-		       			} 
-				    },{
-			        text: 'Intern Placeholder 2',
-		       			listeners : {
-		       				click : function(){
-		       					document.location = 'project_details.html';
-		       				}
-		       			} 
-			    }]
-			});
-		</script>			
-	</div> <!--end Sencha project menus-->
+		</script>		
+	</div> <!--end Sencha intern menu-->
 
 	<div class="footer">
 		<p>

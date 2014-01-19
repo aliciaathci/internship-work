@@ -48,13 +48,14 @@
 	
 	
 	<div class="contentContainer">
-		<h2>Project Details</h2>
+		<h2>Intern Details</h2>
 		
 		<!-- Explicitly create a Container-->
 		<script type="text/javascript">
 			Ext.create('Ext.container.Container', {
 			    layout: {
-			        type: 'border'
+			        type: 'hbox',
+			        align: 'stretch'
 			    },
 			    width: 800,
 			    height: 375,
@@ -62,15 +63,15 @@
 			    border: 1,
 			    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'1px'},
 			    items: [{
-			        name: 'projectDescription',
-			        region: 'center',
-			        //nested border layout for projectDescription starts here
+			        name: 'internDescription',
+			        flex: 2,
+			        //nested border layout for internDescription starts here
 			        items: [{
-			        	name: 'projectTitle',
-			        	html: '<h3>Project Title</h3>',
+			        	name: 'internName',
+			        	html: '<h3>Intern Name</h3>',
 			        	region: 'north'
 			        },{
-			        	name: 'projectDescContent',
+			        	name: 'internDescContent',
 			        	html: 'The detailed description goes here.',
 			        	height: 290,
 			        	region: 'center'
@@ -80,30 +81,19 @@
 			        	items: [{
 			        		xtype: 'button',
 			        		scale: 'medium',
-			        		text: 'Back to Project Listing',
+			        		text: 'Back to Intern Listing',
 			        		listeners : {
 			       				click : function(){
-			       					document.location = 'project_listing.html';
+			       					document.location = 'intern_listing.html';
 			       				}
-		       			} 
-			        	},{
-			        		xtype: 'button',
-			        		scale: 'medium',
-			        		text: 'Visit Project ABC\'s Website',
-			        		listeners : {
-		       					click : function(){
-		       						location.href = 'http://www.google.com';
-		       				}
 		       			} 
 			        	}]
 			        }]
-			        //nested border layout for projectDescription ends here
+			        //nested border layout for internDescription ends here
 			    },{
-			    	//xtype: 'image',
 			    	name: 'images',
 			    	html: 'Images go here',
-			    	region: 'west',
-			    	width: 275,
+			    	flex: 1
 			    	//src: fillerPic.png
 			    }]
 			});

@@ -1,0 +1,12 @@
+/*------------------------------------------------*/
+/*-----[Styles used by intern_listing.html]------*/
+/*------------------------------------------------*/
+
+.contentContainer{
+	max-height: 600px;
+	max-width: 1050px;
+}
+
+#InternMenu{
+	left: 450px;
+}

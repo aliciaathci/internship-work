@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Howard Consulting &#38; Investments Home Page</title>
+	<meta name="description" content="Howard Consulting &#38; Investments is a Statesboro business that creates innovative, personalized projects and offers internship opportunities to students."/>
+	<link rel="stylesheet" type="text/css" href="shared.css" />
+	<link rel="stylesheet" type="text/css" href="elisting_desktop.css" />
+
+	<!--The following stylesheets don't exist yet and are placeholders.
+	<link rel="stylesheet" media="screen and (max-width: 320px)" href="elisting_mobile.css"/>
+	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="elisting_tablet.css"/>
+	<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="elisting_iPad.css"/>
+	-->
+
+	<!-- Importing the stylesheet for the widgets -->
+	<link rel="stylesheet" type="text/css" href="ext-4.2.1.883/resources/css/ext-all.css">
+	
+	<!-- Importing the Ext JS library -->
+	<script type="text/javascript" src="ext-4.2.1.883/ext-all-dev.js"></script>
+	
+</head>
+
+<body>
+	<!--Title bar and naviation code begins here-->
+	<div class="titleBar">
+		<div class="logo">
+			<a href="home.html"><img src="HCI_Logo_small_transparent.png" alt="HCI logo image"/></a>
+		</div>
+		<h1 class="main_title">Howard Consulting &#38; Investments</h1>
+		<div class="arrow">
+			<img src="navArrow.png" alt="image of an arrow"/>
+		</div>
+		
+		<!--navigations links for each page of the website-->
+		<div class="navigation">
+			<a href="home.html">Home</a>
+			&#9; | &#9;
+			<a href="project_listing.html">Projects</a>
+			&#9; | &#9;
+			<a href="intern_listing.html">Interns</a>
+			&#9; | &#9;
+			<a href="event_listing.html">Events</a>
+			&#9; | &#9;
+			<a href="contact.html">Contact Us</a>
+		</div>
+	</div>
+	<!--Title bar and naviation code ends here-->
+	
+	<!--main page content begins here-->
+	<div class="contentContainer">
+		<h2>Event Listing</h2>
+	</div>
+
+	<div id="EventMenu"> <!--start Sencha intern menu-->
+		<h3>Upcoming Events</h3> 
+		
+		<script type="text/javascript">
+			Ext.create('Ext.menu.Menu', {
+		    	width: 300,
+		    	plain: true,
+		    	floating: false,  // usually you want this set to True (default)
+		    	renderTo: EventMenu,
+		    	items: [{
+		       		text: 'GSU Career Fair',
+		       			listeners : {
+		       				click : function(){
+		       					document.location = 'event_details.html';
+		       				}
+		       			} 
+		    		},{
+		        	text: 'TechEXPO',
+		       			listeners : {
+		       				click : function(){
+		       					document.location = 'event_details.html'; //this is a generic example and does not use a loop because the link is a placeholder
+		       				}
+		       			} 
+				    },{
+			        text: 'Bulloch County Technology Festival Extravaganza',
+		       			listeners : {
+		       				click : function(){
+		       					document.location = 'event_details.html';
+		       				}
+		       			} 
+			    }]
+			});
+		</script>		
+	</div> <!--end Sencha event menu-->
+	
+	<div id="slideshow">
+		<!--Comment out the sample picture for now because of size issues.
+			<img src="fillerPic.png" alt="filler image for the slideshow"/>
+		-->
+	</div>
+	
+
+	<div class="footer">
+		<p>
+			<a href="home.html">Home</a>
+			&#9; | &#9;
+			<a href="project_listing.html">Projects</a>
+			&#9; | &#9;
+			<a href="intern_listing.html">Interns</a>
+			&#9; | &#9;
+			<a href="event_listing.html">Events</a>
+			&#9; | &#9;
+			<a href="contact.html">Contact Us</a>
+		</p>
+	</div>	
+
+</body>
