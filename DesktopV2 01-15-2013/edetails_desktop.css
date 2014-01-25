@@ -1,21 +1,19 @@
 /*------------------------------------------------*/
-/*-----[Styles used by project_listing.html]------*/
+/*------[Styles used by event_details.html]-------*/
 /*------------------------------------------------*/
 
 .contentContainer{
 	max-height: 600px;
 	max-width: 1050px;
 	margin-left: 80px;
+
 }
 
-#SenchaMenus{
-	margin-left: 400px;
+#EventMenu{
+	margin-left: 250px;
 }
 
-/*#localProjects{
-	margin-left: 230px;
+#slideshow{
+	max-height: 250px;
+	width: auto;
 }
-
-#internProjects{
-	margin-left: 580px;
-}*/

@@ -1,0 +1,28 @@
+/*------------------------------------------------*/
+/*--------[Styles used by contact.html]-----------*/
+/*------------------------------------------------*/
+
+.contentContainer{
+	max-height: 1000px;
+	max-width: 1050px;
+	margin-left: 80px;
+}
+
+#formContainer1{
+	max-height: 800px;
+	max-width: 450px;
+}
+
+#formContainer2{
+	max-height: 800px;
+	max-width: 450px;
+	margin-left: 500px;
+}
+
+#socialMedia{
+	margin-left: 875px;
+}
+
+h3{
+	color: #000000;
+}

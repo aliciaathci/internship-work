@@ -4,12 +4,12 @@
 	<title>Howard Consulting &#38; Investments Home Page</title>
 	<meta name="description" content="Howard Consulting &#38; Investments is a Statesboro business that creates innovative, personalized projects and offers internship opportunities to students."/>
 	<link rel="stylesheet" type="text/css" href="shared.css" />
-	<link rel="stylesheet" type="text/css" href="elisting_desktop.css" />
+	<link rel="stylesheet" type="text/css" href="edetails_desktop.css" />
 
 	<!--The following stylesheets don't exist yet and are placeholders.
-	<link rel="stylesheet" media="screen and (max-width: 320px)" href="elisting_mobile.css"/>
-	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="elisting_tablet.css"/>
-	<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="elisting_iPad.css"/>
+	<link rel="stylesheet" media="screen and (max-width: 320px)" href="edetails_mobile.css"/>
+	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="edetails_tablet.css"/>
+	<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="edetails_iPad.css"/>
 	-->
 
 	<!-- Importing the stylesheet for the widgets -->
@@ -48,49 +48,64 @@
 	
 	<!--main page content begins here-->
 	<div class="contentContainer">
-		<h2>Event Listing</h2>
-		
-		<div id="EventMenu"> <!--start Sencha intern menu-->
-			<h3>Upcoming Events</h3> 
-			
+		<h2>Event Details</h2>
+
+		<div id="EventMenu">
+			<!-- Explicitly create a Container-->
 			<script type="text/javascript">
-				Ext.create('Ext.menu.Menu', {
-			    	width: 300,
-			    	plain: true,
-			    	floating: false,  // usually you want this set to True (default)
-			    	renderTo: EventMenu,
-			    	items: [{
-			       		text: 'GSU Career Fair',
-			       			listeners : {
-			       				click : function(){
-			       					document.location = 'event_details.html';
-			       				}
-			       			} 
-			    		},{
-			        	text: 'TechEXPO',
-			       			listeners : {
-			       				click : function(){
-			       					document.location = 'event_details.html'; //this is a generic example and does not use a loop because the link is a placeholder
-			       				}
-			       			} 
-					    },{
-				        text: 'Bulloch County Technology Festival Extravaganza',
-			       			listeners : {
-			       				click : function(){
-			       					document.location = 'event_details.html';
-			       				}
-			       			} 
-				    }]
+				Ext.create('Ext.container.Container', {
+				    layout: {
+				        type: 'hbox',
+				        align: 'stretch'
+				    },
+				    width: 800,
+				    height: 375,
+				    renderTo: Ext.getBody(),
+				    border: 1,
+				    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'1px'},
+				    items: [{
+				        name: 'calendar',
+				        html: 'The calendar code goes here.',
+				        flex: 1
+				    },{
+				    	name: 'eventDescription',
+				    	flex: 2,
+				    	//nested border layout for eventDescription starts here
+				    	items: [{
+				    		name: 'eventTitle',
+				    		html: '<h3>Event Name</h3>',
+				    		region: 'north'
+				    		
+				    	},{
+				    		name: 'eventDescContent',
+				    		html: 'The detailed description goes here.',
+				    		height: 290,
+				    		region: 'center'
+				    	},{
+				    		name: 'eventButton',
+				    		region: 'south',
+				    		items: [{
+				        		xtype: 'button',
+				        		scale: 'medium',
+				        		text: 'Back to Event Listing',
+				        		listeners : {
+				       				click : function(){
+				       					document.location = 'event_listing.html';
+				       				}
+			       				} 
+				        	}] //end nested button code
+				        }] //end nested border layout for eventDescription	
+				    },{
+				    	name: 'eventImage',
+				    		html: 'event picture goes here',
+				    		flex: 1
+				    }]	
 				});
-			</script>		
+			</script>
 		</div> <!--end Sencha event menu-->
-		
-		<div id="slideshow">
-			<!--Comment out the sample picture for now because of size issues.
-				<img src="fillerPic.png" alt="filler image for the slideshow"/>
-			-->
-		</div> <!--end slideshow-->
-	</div> <!--end contentContainer-->
+	
+	</div>
+
 
 	<div class="footer">
 		<p>

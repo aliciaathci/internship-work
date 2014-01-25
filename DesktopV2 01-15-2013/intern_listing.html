@@ -68,43 +68,42 @@
 		        Donec quis porta ipsum. Cras hendrerit ultricies consequat. Pellentesque rutrum feugiat nulla, sit amet rutrum diam sodales sit amet. 
 		    </p>
 		</div> <!--end text box-->
-	</div>
 
-	<div id="InternMenu"> <!--start Sencha intern menu-->
-		<h3>Interns</h3> 
-		
-		<script type="text/javascript">
-			Ext.create('Ext.menu.Menu', {
-		    	width: 300,
-		    	plain: true,
-		    	floating: false,  // usually you want this set to True (default)
-		    	renderTo: InternMenu,
-		    	items: [{
-		       		text: 'Alicia Wood',
-		       			listeners : {
-		       				click : function(){
-		       					document.location = 'intern_details.html';
-		       				}
-		       			} 
-		    		},{
-		        	text: 'Suzy Q',
-		       			listeners : {
-		       				click : function(){
-		       					document.location = 'intern_details.html'; //this is a generic example and does not use a loop because the link is a placeholder
-		       				}
-		       			} 
-				    },{
-			        text: 'John Doe',
-		       			listeners : {
-		       				click : function(){
-		       					document.location = 'intern_details.html';
-		       				}
-		       			} 
-			    }]
-			});
-		</script>		
-	</div> <!--end Sencha intern menu-->
-
+		<div id="InternMenu"> <!--start Sencha intern menu-->
+			<h3>Interns</h3> 
+			<script type="text/javascript">
+				Ext.create('Ext.menu.Menu', {
+			    	width: 300,
+			    	plain: true,
+			    	floating: false,  // usually you want this set to True (default)
+			    	renderTo: InternMenu,
+			    	items: [{
+			       		text: 'Alicia Wood',
+			       			listeners : {
+			       				click : function(){
+			       					document.location = 'intern_details.html';
+			       				}
+			       			} 
+			    		},{
+			        	text: 'Suzy Q',
+			       			listeners : {
+			       				click : function(){
+			       					document.location = 'intern_details.html'; //this is a generic example and does not use a loop because the link is a placeholder
+			       				}
+			       			} 
+					    },{
+				        text: 'John Doe',
+			       			listeners : {
+			       				click : function(){
+			       					document.location = 'intern_details.html';
+			       				}
+			       			} 
+				    }]
+				});
+			</script>		
+		</div> <!--end Sencha intern menu-->
+	</div> <!--end contentContainer-->
+	
 	<div class="footer">
 		<p>
 			<a href="home.html">Home</a>

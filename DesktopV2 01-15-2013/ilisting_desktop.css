@@ -5,8 +5,9 @@
 .contentContainer{
 	max-height: 600px;
 	max-width: 1050px;
+	margin-left: 80px;
 }
 
 #InternMenu{
-	left: 450px;
+	margin-left: 450px;
 }
