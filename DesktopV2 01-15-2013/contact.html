@@ -14,20 +14,23 @@
 	-->
 	
 	<!-- Importing the stylesheet for the widgets -->
-	<link rel="stylesheet" type="text/css" href="ext-4.2.1.883/resources/css/ext-all.css">
+	<!--old one <link rel="stylesheet" type="text/css" href="ext-4.2.1.883/resources/css/ext-all.css">-->
+	<link rel="stylesheet" type="text/css" href="http://cdn.sencha.com/ext/gpl/4.2.1/resources/css/ext-all.css">
 	
 	<!-- Importing the Ext JS library -->
-	<script type="text/javascript" src="ext-4.2.1.883/ext-all-dev.js"></script>
+	<!--old one <script type="text/javascript" src="ext-4.2.1.883/ext-all-dev.js"></script>-->
+	<script type="text/javascript" src="http://cdn.sencha.com/ext/gpl/4.2.1/ext-all-dev.js">
 	
 	<script type="text/javascript" src="form1.js"></script>
+	
 	<script type="text/javascript">
-		Ext.onReady(function(){
-			Ext.create('MyApp.email.Form',{
-				width : 300,
-				height : 350,
+		Ext.require('form1');
+		
+		/*Ext.onReady(function(){
+			Ext.require('form1',{
 				renderTo: formContainer1
 			});
-		});
+		});*/
 	</script>
 </head>
 
