@@ -6,7 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="shared.css" />
 	<link rel="stylesheet" type="text/css" href="contact_desktop.css" />
 
-	
 	<!--The following stylesheets don't exist yet and are placeholders.
 	<link rel="stylesheet" media="screen and (max-width: 320px)" href="contact_mobile.css"/>
 	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="contact_tablet.css"/>
@@ -22,15 +21,13 @@
 	<script type="text/javascript" src="http://cdn.sencha.com/ext/gpl/4.2.1/ext-all-dev.js">
 	
 	<script type="text/javascript" src="form1.js"></script>
+	<script type="text/javascript" src="form2.js"></script>
 	
 	<script type="text/javascript">
 		Ext.require('form1');
-		
-		/*Ext.onReady(function(){
-			Ext.require('form1',{
-				renderTo: formContainer1
-			});
-		});*/
+		console.log("form1 required");
+		Ext.require('form2');
+		console.log("form2 required");
 	</script>
 </head>
 
@@ -73,162 +70,15 @@
 	        	<a href="https://twitter.com/HowardCI"><img src="twitter.png" alt="Howard Consulting &#38; Investments Twitter Page"/></a>
 	    </div>
 	
-		<div id="formContainer1">	
-		<!--<script type="text/javascript">
-			/*Ext.create('Ext.form.Panel', {
-			    title: 'Email Marcus & Malcolm',
-			    bodyPadding: 5,
-			    //width: 350,
-			    height: 350,
-				renderTo: formContainer1,
-
-			
-			    // The form will submit an AJAX request to this URL when submitted
-			    url: 'form_submit.html',
-			
-			    // Fields will be arranged vertically, stretched to full width
-			    layout: 'anchor',
-			    defaults: {
-			        anchor: '100%'
-			    },
-			
-			    // The fields
-			    defaultType: 'textfield',
-			    items: [{
-			        fieldLabel: 'Your Name',
-			        name: 'name',
-			        allowBlank: false
-			    },{
-			        fieldLabel: 'Your Email',
-			        name: 'email',
-			        allowBlank: false
-			    },{
-			    	xtype: 'radiogroup',
-        			fieldLabel: 'Subject',
-			        columns: 1,
-			        vertical: true,
-			        items: [
-			            { boxLabel: 'Request a Project', name: 'rb', inputValue: '1', checked: true},
-			            { boxLabel: 'Site Feedback', name: 'rb', inputValue: '2'},
-			            { boxLabel: 'General Inquiry', name: 'rb', inputValue: '3' },
-			            { boxLabel: 'Other', name: 'rb', inputValue: '4' }
-			        ]
-			    },{
-			    	xtype: 'textareafield',
-			        grow : true,
-			        name: 'message',
-			        fieldLabel: 'Message',
-			        anchor: '100%'
-			    },{
-			        xtype: 'button',
-			        text: 'Submit',
-			        formBind: true, //only enabled once the form is valid
-			        disabled: true,
-			        handler: function() {
-			            var form = this.up('form').getForm();
-			            if (form.isValid()) {
-			                form.submit({
-			                    success: function(form, action) {
-			                       Ext.Msg.alert('Success', action.result.msg);
-			                    },
-			                    failure: function(form, action) {
-			                        Ext.Msg.alert('Failed', action.result.msg);
-			                    }
-			                });
-			            }
-			        }
-			    }],
-			});*/
-		</script>-->
+		<div id="formContainer1">
+			<!--form1.js renders here-->	
 		</div><!--end formContainer1-->
 		
 		<div id="formContainer2">	
-		<script type="text/javascript">
-			Ext.create('Ext.form.Panel', {
-			    title: 'Apply for an Internship',
-			    bodyPadding: 5,
-			    width: 450,
-			    height: 325,
-				renderTo: formContainer2,
-
-			
-			    // The form will submit an AJAX request to this URL when submitted
-			    url: 'form_submit.html',
-			
-			    // Fields will be arranged vertically, stretched to full width
-			    layout: 'anchor',
-			    defaults: {
-			        anchor: '100%'
-			    },
-			
-			    // The fields
-			    defaultType: 'textfield',
-			    items: [{
-			        fieldLabel: 'Your Name',
-			        name: 'name',
-			        allowBlank: false
-			    },{
-			        fieldLabel: 'Your Email',
-			        name: 'email',
-			        allowBlank: false
-			    },{
-			    	xtype: 'filefield',
-			        name: 'resume',
-			        fieldLabel: 'Resume',
-			        msgTarget: 'under',
-			        allowBlank: false,
-			        anchor: '100%',
-			        buttonText: 'Browse'
-			    },{
-			    	xtype: 'filefield',
-			        name: 'transcript',
-			        fieldLabel: 'Unoffical copy of academic transcript',
-			        msgTarget: 'under',
-			        allowBlank: false,
-			        anchor: '100%',
-			        buttonText: 'Browse'
-			    },{
-			    	xtype: 'filefield',
-			        name: 'portfolio',
-			        fieldLabel: 'Portfolio (please upload as .zip file)',
-			        msgTarget: 'under',
-			        allowBlank: false,
-			        anchor: '100%',
-			        buttonText: 'Browse'
-			    },{
-			    	fieldLabel: 'Personal Website (optional)',
-			        name: 'website',
-			        allowBlank: true
-			    },{
-			    	xtype: 'label',
-			    	text: 'Please also prepare two letters of recommendation. You will be contacted within X business days.'
-			    },{
-			    	xtype: 'button',
-			        text: 'Submit',
-			        formBind: true, //only enabled once the form is valid
-			        disabled: true,
-			        handler: function() {
-			            var form = this.up('form').getForm();
-			            if (form.isValid()) {
-			                form.submit({
-			                    success: function(form, action) {
-			                       Ext.Msg.alert('Success', action.result.msg);
-			                    },
-			                    failure: function(form, action) {
-			                        Ext.Msg.alert('Failed', action.result.msg);
-			                    }
-			                });
-			            }
-			        }
-			    }],
-			});
-			
-		</script>
+			<!--form2.js renders here-->
 		</div><!--end formContainer2-->
-
+	
 	</div> <!--end contentContainer-->
-
-
 
 	<div class="footer">
 		<p>
