@@ -3,33 +3,6 @@
 /*------------------------------------------------*/
 
 @media screen and (min-width: 321px) and (max-width: 600px) {
-	
-	.titleBar{
-		min-width: 600px;
-	}
-
-	.main_title{
-		top: -60px;
-		left: 150px;
-		width: 442px;
-		font-size: x-large;
-	}
-
-	.arrow{
-		top: -155px;
-		left: 105px;
-		width: 465px;
-	}
-	
-	.arrow img{ /*make arrow in titleBar smaller on mobile devices*/
-		width: 465px;
-		height: 40px;
-	}
-	
-	.navigation{ /*hide navigation menu on mobile devices*/
-		display: none;
-	}
-	
 	.contentContainer{
 		max-height: 1000px;
 		max-width: 600px;
@@ -45,9 +18,5 @@
 		width: 265px;
 		padding: 0px 0px 0px 0px;
 		left: 300px;
-	}
-	
-	.footer{ /*hide footer on mobile devices*/
-		display: none;
 	}
 }

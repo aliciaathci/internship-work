@@ -1,0 +1,16 @@
+/*------------------------------------------------*/
+/*-----[Styles used by project_details.html]------*/
+/*------------------------------------------------*/
+
+.contentContainer{
+	max-height: 600px;
+	max-width: 1050px;
+	margin-left: 80px;
+	overflow: auto;
+	display:block;
+}
+
+#projectContainer {
+	margin-left: auto;
+	display:inline-block;
+}

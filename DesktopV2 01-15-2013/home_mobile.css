@@ -3,34 +3,6 @@
 /*------------------------------------------------*/
 
 @media screen and (max-width: 320px) {
-	
-	.titleBar{
-		min-width: 320px;
-	}
-
-	.main_title{
-		top: -75px;
-		left: 105px;
-		width: 210px;
-		overflow: visible;
-		font-size: x-large;
-	}
-
-	.arrow{
-		top: -175px;
-		left: 105px;
-		width: 210px;
-	}
-	
-	.arrow img{ /*make arrow in titleBar smaller on mobile devices*/
-		width: 210px;
-		height: 30px;
-	}
-	
-	.navigation{ /*hide navigation menu on mobile devices*/
-		display: none;
-	}
-	
 	.contentContainer{
 		max-height: 1500px;
 		max-width: 320px;
@@ -39,9 +11,5 @@
 	#column1, #column2, #column3{
 		top: 0px;
 		padding: 0px 0px 0px 25px;
-	}
-	
-	.footer{ /*hide footer on mobile devices*/
-		display: none;
 	}
 }

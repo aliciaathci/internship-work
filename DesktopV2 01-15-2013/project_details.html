@@ -3,21 +3,29 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Howard Consulting &#38; Investments Home Page</title>
 	<meta name="description" content="Howard Consulting &#38; Investments is a Statesboro business that creates innovative, personalized projects and offers internship opportunities to students."/>
-	<link rel="stylesheet" type="text/css" href="shared.css" />
-	<link rel="stylesheet" type="text/css" href="plisting_desktop.css" />
-
 	
-	<!--The following stylesheets don't exist yet and are placeholders.
-	<link rel="stylesheet" media="screen and (max-width: 320px)" href="pdetails_mobile.css"/>
-	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="pdetails_tablet.css"/>
-	<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="pdetails_iPad.css"/>-->
+	<!--desktop styles-->
+	<link rel="stylesheet" type="text/css" href="shared.css" />
+	<link rel="stylesheet" type="text/css" href="pdetails_desktop.css" />
+	
+	<!--mobile styles-->
+	<!--<link rel="stylesheet" media="screen and (max-width: 320px)" href="pdetails_mobile.css"/>-->
+	<link rel="stylesheet" media="screen and (max-width: 320px)" href="shared_mobile.css"/>
+	
+	<!--tablet styles-->
+	<!--<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="pdetails_tablet.css"/>-->
+	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="shared_tablet.css"/>	
+	
+	<!--iPad styles-->
+	<!--<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="pdetails_iPad.css"/>-->
+	<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="shared_iPad.css"/>
 	
 	
 	<!-- Importing the stylesheet for the widgets -->
-	<link rel="stylesheet" type="text/css" href="ext-4.2.1.883/resources/css/ext-all.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.sencha.com/ext/gpl/4.2.1/resources/css/ext-all.css">
 	
 	<!-- Importing the Ext JS library -->
-	<script type="text/javascript" src="ext-4.2.1.883/ext-all-dev.js"></script>
+	<script type="text/javascript" src="http://cdn.sencha.com/ext/gpl/4.2.1/ext-all-dev.js"></script>
 </head>
 
 <body>
@@ -50,65 +58,67 @@
 	<div class="contentContainer">
 		<h2>Project Details</h2>
 		
-		<!-- Explicitly create a Container-->
-		<script type="text/javascript">
-			Ext.create('Ext.container.Container', {
-			    layout: {
-			        type: 'border'
-			    },
-			    width: 800,
-			    height: 375,
-			    renderTo: Ext.getBody(),
-			    border: 1,
-			    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'1px'},
-			    items: [{
-			        name: 'projectDescription',
-			        region: 'center',
-			        //nested border layout for projectDescription starts here
-			        items: [{
-			        	name: 'projectTitle',
-			        	html: '<h3>Project Title</h3>',
-			        	region: 'north'
-			        },{
-			        	name: 'projectDescContent',
-			        	html: 'The detailed description goes here.',
-			        	height: 290,
-			        	region: 'center'
-			        },{
-			        	name: 'buttons',
-			        	region: 'south',
-			        	items: [{
-			        		xtype: 'button',
-			        		scale: 'medium',
-			        		text: 'Back to Project Listing',
-			        		listeners : {
-			       				click : function(){
-			       					document.location = 'project_listing.html';
+		<div id="projectContainer">
+			<!-- Explicitly create a Container-->
+			<script type="text/javascript">
+				Ext.create('Ext.container.Container', {
+				    layout: {
+				        type: 'border'
+				    },
+				    width: 800,
+				    height: 375,
+				    renderTo: Ext.getBody(),
+				    border: 1,
+				    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'1px'},
+				    items: [{
+				        name: 'projectDescription',
+				        region: 'center',
+				        //nested border layout for projectDescription starts here
+				        items: [{
+				        	name: 'projectTitle',
+				        	html: '<h3>Project Title</h3>',
+				        	region: 'north'
+				        },{
+				        	name: 'projectDescContent',
+				        	html: 'The detailed description goes here.',
+				        	height: 290,
+				        	region: 'center'
+				        },{
+				        	name: 'buttons',
+				        	region: 'south',
+				        	items: [{
+				        		xtype: 'button',
+				        		scale: 'medium',
+				        		text: 'Back to Project Listing',
+				        		listeners : {
+				       				click : function(){
+				       					document.location = 'project_listing.html';
+				       				}
+			       			} 
+				        	},{
+				        		xtype: 'button',
+				        		scale: 'medium',
+				        		text: 'Visit Project ABC\'s Website',
+				        		listeners : {
+			       					click : function(){
+			       						location.href = 'http://www.google.com';
 			       				}
-		       			} 
-			        	},{
-			        		xtype: 'button',
-			        		scale: 'medium',
-			        		text: 'Visit Project ABC\'s Website',
-			        		listeners : {
-		       					click : function(){
-		       						location.href = 'http://www.google.com';
-		       				}
-		       			} 
-			        	}]
-			        }]
-			        //nested border layout for projectDescription ends here
-			    },{
-			    	//xtype: 'image',
-			    	name: 'images',
-			    	html: 'Images go here',
-			    	region: 'west',
-			    	width: 275,
-			    	//src: fillerPic.png
-			    }]
-			});
-		</script>
-	</div>
+			       			} 
+				        	}]
+				        }]
+				        //nested border layout for projectDescription ends here
+				    },{
+				    	//xtype: 'image',
+				    	name: 'images',
+				    	html: 'Images go here',
+				    	region: 'west',
+				    	width: 275,
+				    	//src: fillerPic.png
+				    }]
+				});
+			</script>
+		</div> <!--end projectContainer-->
+	</div> <!--end contentContainer-->
 	
 	
 	<div class="footer">

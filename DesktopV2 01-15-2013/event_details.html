@@ -3,21 +3,30 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Howard Consulting &#38; Investments Home Page</title>
 	<meta name="description" content="Howard Consulting &#38; Investments is a Statesboro business that creates innovative, personalized projects and offers internship opportunities to students."/>
+
+	<!--desktop styles-->
 	<link rel="stylesheet" type="text/css" href="shared.css" />
 	<link rel="stylesheet" type="text/css" href="edetails_desktop.css" />
-
-	<!--The following stylesheets don't exist yet and are placeholders.
-	<link rel="stylesheet" media="screen and (max-width: 320px)" href="edetails_mobile.css"/>
-	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="edetails_tablet.css"/>
-	<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="edetails_iPad.css"/>
-	-->
+	
+	<!--mobile styles-->
+	<!--<link rel="stylesheet" media="screen and (max-width: 320px)" href="edetails_mobile.css"/>-->
+	<link rel="stylesheet" media="screen and (max-width: 320px)" href="shared_mobile.css"/>
+	
+	<!--tablet styles-->
+	<!--<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="edetails_tablet.css"/>-->
+	<link rel="stylesheet" media="screen and (min-width: 321px) and (max-width: 600px)" href="shared_tablet.css"/>	
+	
+	<!--iPad styles-->
+	<!--<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="edetails_iPad.css"/>-->
+	<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 768px)" href="shared_iPad.css"/>
 
 	<!-- Importing the stylesheet for the widgets -->
-	<link rel="stylesheet" type="text/css" href="ext-4.2.1.883/resources/css/ext-all.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.sencha.com/ext/gpl/4.2.1/resources/css/ext-all.css">
 	
 	<!-- Importing the Ext JS library -->
-	<script type="text/javascript" src="ext-4.2.1.883/ext-all-dev.js"></script>
+	<script type="text/javascript" src="http://cdn.sencha.com/ext/gpl/4.2.1/ext-all-dev.js"></script>
 	
+	<script type="text/javascript" src="calendar.js"></script>
 </head>
 
 <body>
@@ -60,12 +69,18 @@
 				    },
 				    width: 800,
 				    height: 375,
-				    renderTo: Ext.getBody(),
+				    renderTo: 'EventMenu',
 				    border: 1,
 				    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'1px'},
 				    items: [{
 				        name: 'calendar',
-				        html: 'The calendar code goes here.',
+				        html: 'calendar code goes here',
+				        /*items: [{
+				        	xtype:'DatePicker', 
+					    	handler: function (dp, date) {
+					    		Ext.Msg.alert('Date Selected', 'You selected ' + Ext.Date.format(date, 'M j, Y'));
+					    	}
+					    }],*/
 				        flex: 1
 				    },{
 				    	name: 'eventDescription',

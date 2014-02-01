@@ -1,0 +1,11 @@
+/*-----------------------------------------------------------*/
+/*---[Styles used on iPad version of project details page]---*/
+/*-----------------------------------------------------------*/
+
+@media screen and (min-width: 601px) and (max-width: 768px) {	
+	.contentContainer{
+		max-height: 1500px;
+		max-width: 768px;
+	}
+	
+}
